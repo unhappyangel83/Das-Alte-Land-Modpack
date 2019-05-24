@@ -1,4 +1,4 @@
-# Das-Alte-Land
+# Das-Alte-Land Modpack
 Modpack for Life is Feudal Your Own Server
 Spec for "__[DE] Das Alte Land|PvERP|Events PvEPvP|TS3: ts3.one-main.de"
 
