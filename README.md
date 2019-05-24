@@ -2,8 +2,12 @@
 Modpack for Life is Feudal Your Own Server
 Spec for "__[DE] Das Alte Land|PvERP|Events PvEPvP|TS3: ts3.one-main.de"
 
-Dieses Modpack steht unter der GNU Puplic 3.0 Lizenz LICENSE
+Dieses Modpack steht unter der GNU Puplic 3.0 Lizenz 
 
+https://github.com/unhappyangel83/Das-Alte-Land/blob/master/LICENSE
+
+Zusätzlich gilt das: 
+https://github.com/unhappyangel83/Das-Alte-Land/tree/master/SteamApps/common/Life%20is%20Feudal%20Your%20Own/%23%20Das%20Alte%20Land%20INFO
 
 Forum: https://lif.one-main.de 
 
