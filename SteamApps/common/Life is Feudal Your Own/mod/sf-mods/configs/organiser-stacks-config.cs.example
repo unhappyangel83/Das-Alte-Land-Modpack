@@ -1,0 +1,48 @@
+//-----------------------------------------------------------------------------
+// Organiser - Stacks Config
+// Stack items of the same type closer together
+//
+// Note: Remove '.example' from the filename to use
+//-----------------------------------------------------------------------------
+
+//-----------------------
+// Set the Stack Space
+//-----------------------
+
+// Set the space between items listed in the Stack Items below
+// Multiple stacks are available to configure different spacing per listed item
+
+Organiser.stack1SpaceX = 80;
+Organiser.stack2SpaceX = 5;
+Organiser.stack3SpaceX = 5;
+Organiser.stack4SpaceX = 5;
+Organiser.stack5SpaceX = 5;
+
+
+//-----------------------
+// Set the Stack Items
+//-----------------------
+
+// 1. Open 'object_types.xml' within the games 'data' folder, and look for the items 'filename.png'
+// 2. Remove the (//) from the 'Organiser' lines below 
+// 3. Change the filenames to your desired items filename
+// 4. Copy + Paste the line to add multiple items!
+// 5. Press the 'Reload' button in the Organier Menu
+
+// * Make sure to include double backspaces (\\)
+
+
+// STACK 1
+Organiser.stack1.add("art\\2D\\Items\\backpack.png", "art\\2D\\Items\\backpack.png");
+
+// STACK 2
+//Organiser.stack2.add("art\\2D\\Items\\wild_plant_fiber.png", "art\\2D\\Items\\wild_plant_fiber.png");
+
+// STACK 3
+//Organiser.stack3.add("art\\2D\\Items\\flax_stem.png", "art\\2D\\Items\\flax_stem.png");
+
+// STACK 4
+//Organiser.stack4.add("art\\2D\\Items\\pickaxe.png", "art\\2D\\Items\\pickaxe.png");
+
+// STACK 5
+//Organiser.stack5.add("art\\2D\\Items\\shovel.png", "art\\2D\\Items\\shovel.png");

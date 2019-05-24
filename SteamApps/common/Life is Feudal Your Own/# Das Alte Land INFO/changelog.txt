@@ -1,0 +1,36 @@
+=================================================================
+Das Alte Land Modpack for Life is Feudal Your Own Server:
+__[DE] Das Alte Land|PvERP|Events PvEPvP|TS3: ts3.one-main.de
+=================================================================
+created by unhappyangel83/Maid des Chaos/Michael F.
+Forum: http://lif.one-main.de
+email: kontakt@lif.one-main.de
+
+2019-05-03
+- copper, silver, gold coins weight reduced from 0.100 to 0.001
+- Horse and cart (with and without tarpaulin) capacity increased from 3,000 to 5,000
+- Wood warehouse and warehouse capacity increased from 15,000 to 25,000
+- Large warehouse capacity increased from 50,000 to 60,000 capacity
+
+2018-12-21
+- added modified herbs icons
+- added changed server login screens
+- campfire modified
+10,000 capacity and destroys itself (2 ingame days)
+- Fire bowl and standing torch (movable) permanently on
+- added Trademod (in the trading item at the counter Ctrl+T)
+- added GuildGUI (Ctrl+G)
+- added SF-Mod (Ctrl+C)
+
+2018-12-15
+- added folder structure
+- added info text data
+- added and config winrar (.exe, .rar)
+
+
+
+
+
+Life Is Feudal © is a game by BITBOX Ltd. This website is not affiliated with Life Is Feudal or BITBOX Ltd.
+Find the official website here: https://lifeisfeudal.com/
+All icons are created by https://www.freepik.com/

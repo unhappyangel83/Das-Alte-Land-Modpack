@@ -1,0 +1,74 @@
+=================================================== 
+ 
+[LiF:YO] Das Alte Land 
+ 
+https://lif.one-main.de/ 
+ 
+------------------------------ 
+ 
+Wähle dein "Steam" Ordner aus 
+ 
+wo Life is Feudal Instaliert ist 
+ 
+und klick auf Entpacken. 
+ 
+* bei der Meldung Überschreiben, ALLE JA 
+ 
+=================================================== 
+ 
+Inhalt: 
+ 
+- Serverseitige Änderungen: siehe http://t1p.de/dal-modpack 
+ 
+- Trademod 
+ 
+- SF Mods 
+ 
+- SF LargeInventory 
+ 
+- GuildGUI 
+ 
+------------------------------ 
+ 
+Ingame Nutzung: 
+ 
+- Trademod: im Handelsposten "Strg+T" drücken 
+ 
+- SF Mods: Ingame "Strg+C" drücken 
+ 
+- GuildGUI: Ingame "Strg+G" drücken 
+ 
+------------------------------ 
+ 
+Original Links der Mod Inhaber/Ersteller: 
+ 
+https://nyuton.net/tradeposts-mod-life-is-feudal-your-own/ 
+ 
+https://nyuton.net/guildgui-lifyo-client-mod/ 
+ 
+http://skunkfu.net/sf-mods/ 
+ 
+http://skunkfu.net/sf-large-inventories/ 
+ 
+------------------------------ 
+ 
+Bearbeiten Empfohlen mit Notepad++ 
+https://notepad-plus-plus.org/ 
+
+------------------------------ 
+
+Mod Liste und Einstellungen: 
+*WICHTIG: nach jeder Einstellung die "in den Dateien" 
+gemacht wird, muss das Spiel neu gestartet werden!* 
+*Besser erst das Spiel aus machen und dann 
+die Einstellungen "in den Dateien" machen.* 
+ 
+------------------------------ 
+ 
+Ich/Wir versichern das dieses Modpack frei von Viren, Trojanern etc. ist und keinerlei Schadsoftware beinhalten. 
+ 
+ 
+*auf evtl. Fehler oder Beschädigungen am PC 
+und/oder Spiel ist jeder selbst verantwortlich!* 
+
+=================================================== 

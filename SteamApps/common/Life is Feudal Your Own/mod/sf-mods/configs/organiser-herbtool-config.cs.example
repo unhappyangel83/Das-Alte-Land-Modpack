@@ -1,0 +1,728 @@
+//-----------------------------------------------------------------------------
+// Organiser - Herb Tool Config
+//
+// 1. Remove '.example' from the filename to use
+//
+// 2. Change the 'herbId' of each Herb to its type using the list below
+//
+// 3. Enable 'Herb Tools' in the Organiser Menu
+//
+// 4. Press the 'Reload' button in the Organiser Menu to reload
+//-----------------------------------------------------------------------------
+
+//------------------------------------
+// HERB TYPE ID
+//------------------------------------
+
+// 0 - Flux
+// 1 - hStam
+// 2 - Flavour
+// 3 - Naphta
+// 4 - sHp
+// 6 - Default
+
+
+//------------------------------------
+// HERB SORT - TRY NOT TO TOUCH!
+//------------------------------------
+
+function Organiser::sortHerb(%this, %herbId, %invItem, %stackCount)
+{
+	%usedcount = %stackCount;
+	%yoffset = 0;
+	%xoffset = 0;
+
+	for (; %usedcount >= Organiser.maxstackcount; %i++)
+	{
+		%usedcount -= Organiser.maxstackcount;
+		%yoffset += Organiser.stackSpace;
+	}
+
+	%row = %herbId;
+	%x = Organiser.startX + (Organiser.stackSpace * %usedcount) + %xoffset;
+	%y = Organiser.startY + (%row * Organiser.spaceY) + %yoffset;
+	%pos = %x @ " " @ %y;
+
+	%invItem.position = %pos;
+}
+
+
+if (isObject(Organiser)) { Organiser.delete(); }
+
+
+//------------------------------------
+// HERBS
+//------------------------------------
+
+new ScriptObject(Organiser)
+{
+	// Herb Parameters
+	startX = 2; 		// 2
+	startY = 32; 		// 32
+	stackSpace = 25; 	// 25
+	maxstackcount = 13; // 13
+	spaceY = 64; 		// 64
+	
+
+	herb[0] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Pitaku Koro";
+		herbShortName = "PiK";
+		gameId = 684;
+		imageFilename = "pitaku_koro.png";
+	};
+
+	herb[1] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Albus Viduae";
+		herbShortName = "AlV";
+		gameId = 685;
+		imageFilename = "albus_viduae.png";
+	};
+
+	herb[2] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Aureus Magistrum";
+		herbShortName = "AuM";
+		gameId = 686;
+		imageFilename = "aureus_magistrum.png";
+	};
+
+	herb[3] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Sapienta Mantis";
+		herbShortName = "SaM";
+		gameId = 687;
+		imageFilename = "sapienta_mantis.png";
+	};
+
+	herb[4] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Nocte Lumen";
+		herbShortName = "NoL";
+		gameId = 688;
+		imageFilename = "nocte_lumen.png";
+	};
+
+	herb[5] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Chorea Iram";
+		herbShortName = "ChI";
+		gameId = 689;
+		imageFilename = "chorea_iram.png";
+	};
+
+	herb[6] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Desertus Smilax";
+		herbShortName = "DeS";
+		gameId = 690;
+		imageFilename = "desertus_smilax.png";
+	};
+
+	herb[7] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Pungentibus Chorea";
+		herbShortName = "PuC";
+		gameId = 691;
+		imageFilename = "pungentibus_chorea.png";
+	};
+
+	herb[8] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Mons Bastardus";
+		herbShortName = "MoB";
+		gameId = 692;
+		imageFilename = "mons_bastardus.png";
+	};
+
+	herb[9] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Filia Prati";
+		herbShortName = "FiP";
+		gameId = 693;
+		imageFilename = "filia_prati.png";
+	};
+
+	herb[10] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Adipem Nebulo";
+		herbShortName = "AdN";
+		gameId = 694;
+		imageFilename = "adipem_nebulo.png";
+	};
+
+	herb[11] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Rosa Kingsa";
+		herbShortName = "RoK";
+		gameId = 695;
+		imageFilename = "rosa_kingsa.png";
+	};
+
+	herb[12] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Bacce Hamsa";
+		herbShortName = "BaH";
+		gameId = 696;
+		imageFilename = "bacce_hamsa.png";
+	};
+
+	herb[13] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Suryodaya bhagya";
+		herbShortName = "Sub";
+		gameId = 697;
+		imageFilename = "suryodaya_bhagya.png";
+	};
+
+	herb[14] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Saltare Diabolus";
+		herbShortName = "SaD";
+		gameId = 698;
+		imageFilename = "saltare_diabolus.png";
+	};
+
+	herb[15] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Kurupa Andhere";
+		herbShortName = "KuA";
+		gameId = 699;
+		imageFilename = "kurupa_andhere.png";
+	};
+
+	herb[16] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Topasa Maidana";
+		herbShortName = "ToM";
+		gameId = 700;
+		imageFilename = "topasa_maidana.png";
+	};
+
+	herb[17] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Rakta Stema";
+		herbShortName = "RaS";
+		gameId = 701;
+		imageFilename = "rakta_stema.png";
+	};
+
+	herb[18] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Phlavar Pharest";
+		herbShortName = "PhP";
+		gameId = 702;
+		imageFilename = "phlavar_pharest.png";
+	};
+
+	herb[19] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Mauna Boba";
+		herbShortName = "MaB";
+		gameId = 703;
+		imageFilename = "mauna_boba.png";
+	};
+
+	herb[20] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Falcem Malleorum";
+		herbShortName = "FaM";
+		gameId = 704;
+		imageFilename = "falcem_malleorum.png";
+	};
+
+	herb[21] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Curaila Jangha";
+		herbShortName = "CuJ";
+		gameId = 705;
+		imageFilename = "curaila_jangha.png";
+	};
+
+	herb[22] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Aquila Peccatum";
+		herbShortName = "AqP";
+		gameId = 706;
+		imageFilename = "aquila_peccatum.png";
+	};
+
+	herb[23] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Nequissimum Propodium";
+		herbShortName = "NeP";
+		gameId = 707;
+		imageFilename = "nequissimum_propodium.png";
+	};
+
+	herb[24] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Viridi ursae";
+		herbShortName = "Viu";
+		gameId = 708;
+		imageFilename = "viridi_ursae.png";
+	};
+
+	herb[25] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Muncha Vana";
+		herbShortName = "MuV";
+		gameId = 709;
+		imageFilename = "muncha_vana.png";
+	};
+
+	herb[26] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Caeci Custos";
+		herbShortName = "CaC";
+		gameId = 710;
+		imageFilename = "caeci_custos.png";
+	};
+
+	herb[27] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Errantia Ludaeo";
+		herbShortName = "ErL";
+		gameId = 711;
+		imageFilename = "errantia_ludaeo.png";
+	};
+
+	herb[28] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Oscularetur";
+		herbShortName = "Osc";
+		gameId = 712;
+		imageFilename = "oscularetur.png";
+	};
+
+	herb[29] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Mala Fugam";
+		herbShortName = "MaF";
+		gameId = 713;
+		imageFilename = "mala_fugam.png";
+	};
+
+	herb[30] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Curva Manus";
+		herbShortName = "CuM";
+		gameId = 714;
+		imageFilename = "curva_manus.png";
+	};
+
+	herb[31] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Pecuarius Ventus";
+		herbShortName = "PeV";
+		gameId = 715;
+		imageFilename = "pecuarius_ventus.png";
+	};
+
+	herb[32] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Petra Stellam";
+		herbShortName = "PeS";
+		gameId = 716;
+		imageFilename = "petra_stellam.png";
+	};
+
+	herb[33] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Acerba Moretum";
+		herbShortName = "AcM";
+		gameId = 717;
+		imageFilename = "acerba_moretum.png";
+	};
+
+	herb[34] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Dulcis Radix";
+		herbShortName = "DuR";
+		gameId = 718;
+		imageFilename = "dulcis_radix.png";
+	};
+
+	herb[35] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Kromenta Salicia";
+		herbShortName = "KrS";
+		gameId = 719;
+		imageFilename = "kromenta_salicia.png";
+	};
+
+	herb[36] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Vertato Zonda";
+		herbShortName = "VeZ";
+		gameId = 720;
+		imageFilename = "vertato_zonda.png";
+	};
+
+	herb[37] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Khalari Gratsi";
+		herbShortName = "KhG";
+		gameId = 721;
+		imageFilename = "khalari_gratsi.png";
+	};
+
+	herb[38] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Remerta Poskot";
+		herbShortName = "ReP";
+		gameId = 722;
+		imageFilename = "remerta_poskot.png";
+	};
+
+	herb[39] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Holmatu Stazo";
+		herbShortName = "HoS";
+		gameId = 723;
+		imageFilename = "holmatu_stazo.png";
+	};
+
+	herb[40] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Kaleda Mesgano";
+		herbShortName = "KaM";
+		gameId = 724;
+		imageFilename = "kaleda_mesgano.png";
+	};
+
+	herb[41] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Fakha Rudob";
+		herbShortName = "FaR";
+		gameId = 725;
+		imageFilename = "fakha_rudob.png";
+	};
+
+	herb[42] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Kacaro Vilko";
+		herbShortName = "KaV";
+		gameId = 726;
+		imageFilename = "kacaro_vilko.png";
+	};
+
+	herb[43] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Fassari Tolge";
+		herbShortName = "FaT";
+		gameId = 727;
+		imageFilename = "fassari_tolge.png";
+	};
+
+	herb[44] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Sarmento Gaute";
+		herbShortName = "SaG";
+		gameId = 728;
+		imageFilename = "sarmento_gaute.png";
+	};
+
+	herb[45] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Persetu Hara";
+		herbShortName = "PeH";
+		gameId = 729;
+		imageFilename = "persetu_hara.png";
+	};
+
+	herb[46] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Hallatra Kronye";
+		herbShortName = "HaK";
+		gameId = 730;
+		imageFilename = "hallatra_kronye.png";
+	};
+
+	herb[47] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Laster Kutta";
+		herbShortName = "LaK";
+		gameId = 731;
+		imageFilename = "laster_kutta.png";
+	};
+
+	herb[48] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Utrokka Khuru";
+		herbShortName = "UtK";
+		gameId = 732;
+		imageFilename = "utrokka_khuru.png";
+	};
+
+	herb[49] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Kyasaga Sherl";
+		herbShortName = "KyS";
+		gameId = 733;
+		imageFilename = "kyasaga_sherl.png";
+	};
+
+	herb[50] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Jukola Beshaar";
+		herbShortName = "JuB";
+		gameId = 734;
+		imageFilename = "jukola_beshaar.png";
+	};
+
+	herb[51] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Ripyote Quamisy";
+		herbShortName = "RiQ";
+		gameId = 735;
+		imageFilename = "ripyote_quamisy.png";
+	};
+
+	herb[52] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Fuskegtra Xelay";
+		herbShortName = "FuX";
+		gameId = 736;
+		imageFilename = "fuskegtra_xelay.png";
+	};
+
+	herb[53] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Burmenta Wallo";
+		herbShortName = "BuW";
+		gameId = 737;
+		imageFilename = "burmenta_wallo.png";
+	};
+
+	herb[54] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Fohatta Torn";
+		herbShortName = "FoT";
+		gameId = 738;
+		imageFilename = "fohatta_torn.png";
+	};
+
+	herb[55] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Dustali Krabo";
+		herbShortName = "DuK";
+		gameId = 739;
+		imageFilename = "dustali_krabo.png";
+	};
+
+	herb[56] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Gratias Sivara";
+		herbShortName = "GrS";
+		gameId = 740;
+		imageFilename = "gratias_sivara.png";
+	};
+
+	herb[57] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Memen Anik";
+		herbShortName = "MeA";
+		gameId = 741;
+		imageFilename = "memen_anik.png";
+	};
+
+	herb[58] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Gortaka Messen";
+		herbShortName = "GoM";
+		gameId = 742;
+		imageFilename = "gortaka_messen.png";
+	};
+
+	herb[59] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Kalya Nori";
+		herbShortName = "KaN";
+		gameId = 743;
+		imageFilename = "kalya_nori.png";
+	};
+
+	herb[60] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Uliya Sundara";
+		herbShortName = "UlS";
+		gameId = 744;
+		imageFilename = "uliya_sundara.png";
+	};
+
+	herb[61] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Jenaro Vannakam";
+		herbShortName = "JeV";
+		gameId = 745;
+		imageFilename = "jenaro_vannakam.png";
+	};
+
+	herb[62] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Huryosa Gulla";
+		herbShortName = "HuG";
+		gameId = 746;
+		imageFilename = "huryosa_gulla.png";
+	};
+
+	herb[63] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Ital Iranta";
+		herbShortName = "ItI";
+		gameId = 747;
+		imageFilename = "ital_iranta.png";
+	};
+
+	herb[64] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Murkha Bola";
+		herbShortName = "MuB";
+		gameId = 748;
+		imageFilename = "murkha_bola.png";
+	};
+
+	herb[65] = new ScriptObject()
+	{
+		class = htHerb;
+		herbId = 6;
+		herbName = "Naraen Pandanomo";
+		herbShortName = "NaP";
+		gameId = 750;
+		imageFilename = "naraen_pandanomo.png";
+	};
+
+	herbCount = 66;
+};

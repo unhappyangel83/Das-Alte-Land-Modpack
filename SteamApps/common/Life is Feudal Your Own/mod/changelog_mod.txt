@@ -1,0 +1,300 @@
+## Changelog
+
+# [v1.20] - 2018-11-18
+
+- Added Herbs Overlay - Auto detects the effects of herbs and shows coloured indicators
+
+- Quick Join - Added Auto Connect - Auto connect to a server - useful if a server is full (YO)
+- GFX - Re-added Grass toggle for YO
+- Clicker - No longer clicks Craft in Mixing Herbs window if out of herbs
+
+
+# [v1.19.1] - 2018-10-31
+
+- Bugfix - Disabled Grass toggle for YO (for now) as its causing crashes for some
+
+
+# [v1.19] - 2018-10-27
+
+- Added Guild Manager - Change Guild Roles, Standings & Claim Rules, without typing commands (Ctrl + I)
+- Added Timer - Set a time that counts down to a ding (Ctrl + T)
+- Re-added Grass toggle!
+
+- Organiser - Weight now includes equipped carrying weight
+- Organiser - Moved Weight above the players inventory
+- Organiser - Changed Item Spacing textbox to a slider - Change spacing on the fly
+- Organiser - Fixed buttons in Kilns, Furnaces, etc. being hidden if Craft Button is disabled (lol)
+- Organiser - Changed Auto Organise to Manual Sort
+- Crosshair - Added X-Axis slider
+- Crosshair - Added Crosshair Type dropdown - Choose between Cross and Point
+- Clicker - If Hotbar Click is enabled, List Click is then disabled, and vice versa
+- General - No longer able to enable more than one auto script (to avoid running scripts overlapping)
+- General - Tided up the SF Mods window
+- Tools - Added Help Tooltips toggle
+- GFX - Added Cam Zoom toggle (Alt + Z)
+
+
+# [v1.18] - 2018-10-08
+
+- Tools - Added 2nd Crosshair - A secondary crosshair for 3rd person Archery (Alt + C)
+- Gather - Added 45 degrees toggle - Switch between turning 45 or 90 degrees
+- Organiser - Re-added Auto Organiser toggle with 'Ctrl + S' hotkey
+- Info Bar - Added an Opacity slider
+- GFX - Brightness slider now changes the brightness as you slide it - no need to save either
+- General - Changed Fix Stuck Sounds hotkey to 'Alt + H' to avoid interfering with WASD keys
+- General - Changed Disable Drunk FX hotkey to 'Alt + J' to avoid interfering with WASD keys
+- Clicker - Now clicks the Build button in the Building window when shown
+
+
+# [v1.17] - 2018-09-29
+
+- Gather - Fixed material detection if game language set to language other than English
+- Gather - Changed default Search/Gather Intervals depending if on YO or MMO
+- Gather - Added Guide Link
+- Organiser - All The Things - Toggle to organise items in all windows, not just containers
+- Organiser - Added toggle to show or hide the Craft button in the Players Inventory
+- Organiser - Merged Settings with main window
+- Clicker - Clicks Yes in message box if shown when auto-clicking Hotbar for Prey for Homecoming (YO)
+- Info Bar - Added options to move the Info Bar to the bottom
+- Info Bar - Moved month before day
+- Splitter - Increased Stack Size limit
+
+
+# [v1.16] - 2018-09-23
+
+- Tools - Re-added Shield Block (NumPad7)
+- GFX - Re-added original Zoom function based on Player FoV (Q)
+- Info Bar - Proximity now shows Players and Animals separately (Players/Animals) 
+- Info Bar - Added Large Bar option
+- Info Bar - Added abbreviated months
+- Info Bar - Removed year from date
+- General - Stop All Script hotkey now disables Auto Parry if enabled
+- General - Moved Web and Observe mode to Tools tab and removed Misc tab
+- General - Created Info Bar tab
+
+
+# [v1.15] - 2018-09-13
+
+- Gather - Replaced Material dropdown with toggles for each Material
+- General - Replaced Shield Block with Auto Parry - Repeats parrying (NumPad9)
+- General - Added System Logs toggle for Gather, Healing & Archer
+- General - Added Observe Mode - Forces Observe Mode on every 2 seconds
+- Clicker - Re-added Click List Item
+- GFX - Removed Zoom In - No longer useful in its current state
+- GFX - Removed Grass Toggle - No longer works
+- Clicker - Merged Settings with main window
+- Organiser - Moved Sort Mode and Item Details to main window
+
+
+# [v1.14.1] - 2018-09-08
+
+- Fixed bug that on clicking Save, the players FoV defaults - my bad
+- Re-added List Selector - Still useful, huh
+
+
+# [v1.14] - 2018-09-07
+
+- Tweaks made for the new update of LiF: Your Own (v1.4.0.1)
+
+- Organiser - Added Organise Once toggle - Sorts an inventory once after opening
+- Info Bar - Added In-Game Date & Time (YO)
+- Info Bar - Removed the seconds from Time
+- GFX - Reworked Zoom
+- GFX - Removed Player FoV - no longer needed - can now be changed in game Video settings
+- Poison - Removed Poison Indicator - No longer needed
+- General - Fixed Mute Sound Hotkey not working (MMO)
+- List Selector - Removed - No longer useful
+
+
+# [v1.13] - 2018-08-26
+
+- Hotkeys - Added ability to change key bindings in-game - 'keybinds-config.cs' file no longer required
+- Clicker - Clicking Logs now show if Hotbar Click or Click List Item is enabled
+- Clicker - Fixed Click List Item enabled by default
+- Splitter - Added 'Right Shift' hotkey to toggle Splitter on/off
+- Gather - Fixed rotation going offset after a while of Gathering
+- List Selector - Now left clicks on toggle before list shows
+- General - Added 'Alt + M' hotkey to toggle Sound
+
+
+# [v1.12] - 2018-08-15
+
+- Gather - Doubled gather speed - Now searches in 45 degrees instead of 90
+- Info Bar - Added Proximity - Shows the count of players and animals in close proximity of you
+- General - Disables Splash & Video intros - By moving them to a 'intro.backup' folder on start
+- General - Added Quick Join to Main Menu - Directly connect to a server using its IP address (YO only)
+- General - Added SF Mods version info to Main Menu (YO only)
+- Posion - Added Antidote Type - Choose between using 'Double Blood Prep' or 'Warcry (Arghhhh!)' to cure poison
+- Organiser - Added Refresh - Change the refresh rate of the Organiser
+- Organiser - Item Details now show in Barter window
+
+
+# [v1.11] - 2018-08-05
+
+IMPORTANT: Delete the 'sf-mods' folder first before updating (make sure to backup config files!)
+
+- Configs - Moved all config files to 'configs' folder (allows for easier updating)
+- Configs - Moved 'bind.cs' to 'configs' folder and renamed to 'keybinds-config.cs'
+
+- General - Tab positions are now saved
+- General - Re-added Hotkeys Window
+- General - All window titles changed to white (MMO)
+- General - Added Hotkey to disable all running scripts (NumPad0)
+- General - Web/Changes/Update windows now larger and centered
+- Oragniser - Re-shuffled the Settings window, making it smaller
+- Organiser - Settings window position is now saved on toggle/save
+- Organiser - Added hotkey to toggle Organiser Settings (ALT + O)
+- Organiser - Added Item Region toggle - Toggle regional item colour
+- Organiser - Fixed Organiser Item Details breaking if an items objId is more than 1,000,000
+- Organiser - Fixed items being cut out if inventories overflowing
+- Organiser - Fixed organising in Buildings, Kilns, etc. windows when it shouldn't be
+- Organiser - Fixed Stacks not working after 2nd Stack (organiser-stacks-config.cs)
+- Clicker - Added Settings window (ALT + C)
+- Clicker - Added List Item textbox - Allows you set which item to select on click
+- Clicker - Added Clicking Logs toggle - Disable clicking logs in the System Chat if clicking 
+- Clicker - Fixed Yes button if Pray for Homecoming not being clicked in languages other than English (MMO)
+- GFX - Added Cam Zoom hotkeys to 'keybinds-config.cs'
+- GFX - If Cam Zoom is disabled, scroll binds are set back to default (after a restart)
+- Archer - Added Block Action toggle - Switches the Fire action to Block action
+
+
+# [v1.10] - 2018-07-22
+
+- Organiser - Added 'organiser-profiles-config.cs' - Change the font and colour of item texts in inventories
+- Gather - Added ability to gather Branches (MMO)
+- Clicker - Now Clicks the Yes button if Praying for Homecoming (MMO)
+- Clicker - Fixed not clicking Craft button after running out of soft stamina (MMO)
+
+
+# [v1.9] - 2018-07-12
+
+- Organiser - Added Sort Mode - Change how items are sorted based on its details
+- Organiser - Added Item Detail Modes - Change between Durability (SF Mods) and Quality (Ellian Mods) colour codes
+- Organiser - Added Multiple Stacking - Allows you to set multiple stacks with seperate spacing - Configured in 'organiser-stacks-config.cs'
+- Organiser - Added Instant Stats - Changes the hover time of the items stats tooltip to open instantly
+- Organiser - Added Item Quality toggle
+- Organiser - Moved Item Quality text above the Item Quantity text
+- Organiser - Changed item text size to 12 to 14 and made bold
+- Orangiser - Changed weight text to bold
+- Organiser - Fixed Inventory button not sitting center when resize enabled (MMO)
+- General - Added Update Check - Alerts you if a new SF Mods update is available
+- General - Changed limit for all interval text boxes from 100ms to 10ms
+- Info Bar - Added dropdown to change position - Left, Center, or Right
+- GFX - Cam Zoom - Now works in build mode
+- Clicker - Fixed Craft button not being clicked (MMO)
+
+
+# [v1.8] - 2018-07-01
+
+- Organiser - Added Resize - Reduces the height of the players inventory when organising
+- Organiser - Added Herb Tool - Sorts herbs in their own rows - Configured in 'organiser-herbtool-config.cs'
+- Organiser - Added 'organiser-stack-config.cs' - Stack items of the same type even closer together
+- Organiser - Added Organiser Settings - Set Item Spacing and ability to reload 'config.cs' files in-game
+- Organiser - Fixed some containers not being organised in MMO
+- Orangiser - Fixed Sacks not showing name if Item Details enabled
+- Not Organiser - Added In-Game Date & Time to Info Bar (MMO only)
+
+
+# [v1.7] - 2018-06-23
+
+- Added Organiser - Organise items in inventories (Based on Ellian Mods)
+- Added Drunk FX Disable hotkey (Alt + D)
+- Merged Items Quality, Durability & Special toggles into Item Stats toggle
+- Moved List Selector, Auto-click Produce & Shield Block to Tools
+- Moved Info Bar & Web to Misc
+- Fixed Brightness value not updating when clicking on the slider
+- Brightness slider can now be decreased to 0.5
+- Increased the hover time for tooltip
+- Removed Position in Info Bar - No longer works in MMO and pretty useless anyway
+
+
+# [v1.6] - 2018-06-05
+
+- Added Cam Zoom - Zooms the players camera in & out using mouse scroll
+- Added Hotbar Click - Automatically clicks on a hotbar based on its number
+- Added List Selector - Automatically chooses an item on a list and auto selects it using 'Ctrl + X'
+- Changed SFXINIT hotkey to 'Alt + S'
+- Fixed SFXINIT hotkey (fixes stuck sounds) never ever actually working, hmm
+- Fixed constant warning logs in console before game start
+- Cleaned up 'bind.cs' file
+
+
+# [v1.5] - 2018-05-27
+
+- Added Item Durability - Displays the durability of items within inventories using color codes
+- Added Item Type - Displays the types of items within inventories using color codes
+- Added Web - Set a URL address (like a live map) and press 'F5' to open it in-game
+- Added Info Bar - Displays the current FPS, Ping, Player Heading and Player Position
+- Added Brightness Slider - Sets the amount of in-game brightness
+- Added disabling of event message window
+- Fixed Pouches, Bags & Backpacks not showing name when Item Quality enabled
+- Fixed Shield Block being inconsistant
+- Removed Clock
+
+
+# [v1.4] - 2018-04-24
+
+- Added Item Quality - Shows quality values of Items in Inventories
+- Added Auto Antidote - Auto take antidote in Hotbar 0 if poisoned
+- Added GFX tab (replaces FOV tab)
+- Added ability to toggle Grass in GFX
+- Added ability to toggle Fog in GFX
+- Added Toggles to switch on/off Clicker, Gather, Heal, Archer and Shield Block (disabled by default)
+- Added Tooltips that explain what each function does, and how to use them
+- Moved Auto-Click Produce to new Prod tab and added dropdown to choose between Produce or Mass Produce
+- Clicker now auto clicks Craft button in Item Craft windows (e.g. Shape Rock)
+- Removed hotkeys window
+
+
+# [v1.3] - 2018-03-22
+
+- Added Clock - Shows Time of Day
+- Added Split - Auto Split a stack of items based on defined value
+- Added Auto-Click Produce Button
+- Added ability to Gather Edibles & Wild Plants (MMO)
+- Added ability to limit Clicker clicks
+- Added ability to change Player POV
+- Added Updates button that displays an online Changelog of the mod
+- Added option to disable Poison Indicator
+- Added persistent window positions on Save/Close
+- Added disabling of observation window
+
+
+# [v1.2] - 2018-02-17
+
+- Added Auto Archer Fire
+- Added ability to gather Plant Fiber, Flint Stone, and Sling Ammo in MMO
+- Renamed Herb tab to Gather (due to above)
+- Fixed Herbs not being detected in MMO
+- Fixed Gather not turning 90 degrees accurately (needed more Pi decimal places, yum)
+
+
+# [v1.1] - 2017-12-19
+
+- Re-designed window with tabs to be more compact
+- Added Hotkeys window
+- Added /sfxinit command hotkey (fixes stuck sounds)
+- Added Auto War Dance
+- Added Toggle Shield Bash (NumPad9)
+- Clicker interval textbox now focuses on window open
+- All textboxes now unfocus on Save
+- Changed /stuck command hotkey to 'Ctrl + U'
+- Fixed clicker doing action if Mix window open
+- Set 100ms minimum to all intervals
+
+
+# [v1.0.2] - 2017-12-12
+
+- Fixed Craft herb button not clicking in MMO
+
+
+# [v1.0.1] - 2017-12-11
+
+- Clicker now clicks Craft herb button
+- Moved keybindings to bind.cs file
+- Changed SF Mods Window toggle to 'Ctrl + C'
+
+
+# [v1.0] - 2017-12-05
+
+- Initial release

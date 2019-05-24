@@ -1,0 +1,125 @@
+//-----------------------------------------------------------------------------
+// Organiser - Profile Config
+// Change the font and colour of item texts in inventories
+//
+// Note: Remove '.example' from the filename to use
+//-----------------------------------------------------------------------------
+
+//-----------------------
+// DEFAULT
+//-----------------------
+
+// White
+singleton GuiControlProfile(SFGuiOrganiserWhite)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "255 255 255";
+};
+
+
+//-----------------------
+// DURABILITY
+//-----------------------
+
+// Green - More than 50%
+singleton GuiControlProfile(SFGuiOrganiserDurabilityGreen)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "20 255 20";
+};
+
+
+// Yellow - Between 10% and 50%
+singleton GuiControlProfile(SFGuiOrganiserDurabilityYellow)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "224 192 11";
+};
+
+
+// Orange - Between 0% and 10%
+singleton GuiControlProfile(SFGuiOrganiserDurabilityOrange)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "255 102 0";
+};
+
+
+// Red - 0% (broken)
+singleton GuiControlProfile(SFGuiOrganiserDurabilityRed)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "255 0 0";
+};
+
+
+// Pink - Region Specific
+singleton GuiControlProfile(SFGuiOrganiserDurabilityPink)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "240 80 240";
+};
+
+
+//-----------------------
+// QUALITY
+//-----------------------
+
+// Red (Legendary) - 100%
+singleton GuiControlProfile(SFGuiOrganiserQualityLegendary)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "255 0 0";
+};
+
+
+// Pink (Epic) - Between 80% and 99%
+singleton GuiControlProfile(SFGuiOrganiserQualityEpic)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "240 80 240";
+};
+
+
+// Blue (Rare) - Between 60% and 80%
+singleton GuiControlProfile(SFGuiOrganiserQualityRare)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "100 100 255";
+};
+
+
+// Green (Normal) - Between 30% and 60%
+singleton GuiControlProfile(SFGuiOrganiserQualityNormal)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "20 255 20";
+};
+
+
+// White (Common) - Less than 30%
+singleton GuiControlProfile(SFGuiOrganiserQualityCommon)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "255 255 255";
+};
+
+
+// Yellow - Region Specific
+singleton GuiControlProfile(SFGuiOrganiserQualityRegional)
+{
+	fontSize = 14;
+	fontType = "ArialBold";
+	fontColor = "224 192 11";
+};
